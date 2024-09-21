@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./CSS/reset.css" />
+  <link rel="stylesheet" href="./CSS/styles.css" />
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=80&id=jIAxq62xVWG5&format=png" type="image/x-icon" />
+  <title>SuperRápido</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar" style="background-color: white;">
+    <div class="container-fluid">
+      <img id="imgLogo" src="./img/logotipo.jpeg" alt="logoIMG" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carrinho</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Produto" aria-label="Search">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- fim menu -->
+
+  <!-- inicio carrossel -->
+  <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="./img/ofertas.jpeg" class="d-block w-100 imgCarrossel" alt="promoção1" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="tittleCarrosel">Suas compras mais rápidas e fáceis.</h5>
+          <p class="subtittleCarrossel">
+            Preços baixos em todos os produtos, aproveite antes que acabem!
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/dia-carnes.jpeg" class="d-block w-100 imgCarrossel" alt="promoção2" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="tittleCarrosel">Carnes nobres com preços imperdíveis!</h5>
+          <p class="subtittleCarrossel">
+            Os melhores cortes com ofertas especiais para seu churrasco.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/dia-hortifruti.jpeg" class="d-block w-100 imgCarrossel" alt="promoção3" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="tittleCarrosel">Frescor direto do campo</h5>
+          <p class="subtittleCarrossel">
+            Frutas e verduras fresquinhas com até 30% de desconto. Aproveite!
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- inicio card´s -->
+  <div class="titleCard">
+    <p>NOSSOS PRODUTOS</p>
+  </div>
+
+  <div class="cardMain">
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://media.istockphoto.com/id/2158281967/pt/foto/pattern-laid-out-organic-vegetables-fruits-and-herbs-on-shelves-at-farmers-market-city-bright.jpg?s=612x612&w=0&k=20&c=q9IBjYhEyeHe3-3cQ0_j-q_8Kh7Elggo3kY6rVRXsH8="
+        class="card-img-top" alt="Hortifruti" />
+      <div class="card-body">
+        <h5 class="card-title">Hortifruti</h5>
+        <p class="card-text">
+          Frescor garantido todos os dias.
+        </p>
+
+        <button type="button" class="btnCard btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver mais
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ofertas Exclusivas!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Aproveite nossas promoções especiais disponíveis apenas por tempo limitado. Cadastre-se agora e receba
+                um cupom de desconto para sua próxima compra no Supermercado XYZ! Não perca essa oportunidade de
+                economizar em seus produtos favoritos.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Cadastrar e Garantir Desconto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://media.istockphoto.com/id/579405346/pt/foto/a-carne.jpg?s=612x612&w=0&k=20&c=ZvQxXNK89J3AOIa2cr4nhu67vMXDYIijxnr5MktediA="
+        class="card-img-top" alt="Carnes e Frios" />
+      <div class="card-body">
+        <h5 class="card-title">Carnes e Frios</h5>
+        <p class="card-text">
+          Seleção de carnes nobres e especiais.
+        </p>
+        <button type="button" class="btnCard btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver mais
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://media.istockphoto.com/id/1232570251/pt/foto/shelves-with-variety-refreshing-of-beverage-for-sale.webp?a=1&b=1&s=612x612&w=0&k=20&c=HZrO6xJO2QeiAUlyrEKhK_COUAcius0yIXXW_c6rNhU="
+        class="card-img-top" alt="Bebidas" />
+      <div class="card-body">
+        <h5 class="card-title">Bebidas</h5>
+        <p class="card-text">
+          Sucos, refrigerantes e muito maiss.
+        </p>
+        <button type="button" class="btnCard btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver mais
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://media.istockphoto.com/id/949892474/pt/foto/close-up-view-of-freshly-baked-bakery-in-hypermarket.jpg?s=612x612&w=0&k=20&c=Plrm4sDUfag7KwDV1MFjhe5ofiIaYNURhwkvDXRqVDs="
+        class="card-img-top" alt="Padaria" />
+      <div class="card-body">
+        <h5 class="card-title">Padaria</h5>
+        <p class="card-text">
+          Pães quentinhos e frescos todos os dias.
+        </p>
+        <button type="button" class="btnCard btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver mais
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://media.istockphoto.com/id/1454412704/pt/foto/deodorant-on-shelf-horizontal-at-supermarket.jpg?s=612x612&w=0&k=20&c=iQfWEHqx70GWtbu-svT_QhS0KCITxC049LN0ieyN-Ng="
+        class="card-img-top" alt="Produtos de Higiene" />
+      <div class="card-body">
+        <h5 class="card-title">Produtos de Higiene</h5>
+        <p class="card-text">
+          Tudo para o seu cuidados pessoal.
+        </p>
+        <button type="button" class="btnCard btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver mais
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- inicio card´s2 -->
+  <div class="titleCard subtitleCard">
+    <p>OFERTAS ESPECIAIS</p>
+  </div>
+
+  <div class="cardMain">
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://us-southeast-1.linodeobjects.com/storage/flordaposse/media/uploads/produto/file_peito_f_sadia_em_bifes_bdj_800g_9e3191df-d408-424f-a458-2386c17471e4.png"
+        class="card-img-top" alt="Peito de Frango (kg)" />
+
+      <div class="card-body">
+        <h5 class="card-title">Peito de Frango (kg)</h5>
+        <p class="card-text">
+        <p>De: </p>
+        <p> <del>R$12,99</del></p>
+        <p>Por: </p>
+        <strong>R$9,99</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="https://th.bing.com/th/id/OIP.Xrvd66mN9CnHa6zkVSz_LQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Arroz Tipo 1 (5kg)" />
+      <div class="card-body">
+        <h5 class="card-title">Arroz Tipo 1 (5kg)</h5>
+        <p class="card-text">
+        <p>De: </p>
+        <p> <del>R$23,99</del></p>
+        <p>Por: </p>
+        <strong>R$18,99</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="https://static.paodeacucar.com/img/uploads/1/55/24275055.jpg" class="card-img-top" alt="Sabão Líquido OMO 3L" />
+      <div class="card-body">
+        <h5 class="card-title">Sabão Líquido OMO 3L</h5>
+        <p class="card-text">
+        <p>De: </p>
+        <p> <del>R$25,99</del></p>
+        <p>Por: </p>
+        <strong>R$19,99</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="https://th.bing.com/th/id/OIP.dM8NrZeDoYQ-EVw5NcrsRgAAAA?w=225&h=220&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+        class="card-img-top" alt="Refrigerante Coca-Cola 2L" />
+      <div class="card-body">
+        <h5 class="card-title">Refrigerante Coca-Cola 2L</h5>
+        <p class="card-text">
+        <p>De: </p>
+        <p> <del>R$7,99</del></p>
+        <p>Por: </p>
+        <strong>R$5,99</strong></p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="https://th.bing.com/th/id/OIP.VAuvAH3Ecbw25FBKku5kUQHaHa?rs=1&pid=ImgDetMain" class="card-img-top"
+        alt="Shampoo Pantene 400ml" />
+      <div class="card-body">
+        <h5 class="card-title">Shampoo Pantene 400ml</h5>
+        <p class="card-text">
+        <p>De: </p>
+        <p> <del>R$18,99</del></p>
+        <p>Por: </p>
+        <strong>R$14,99</strong></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- blockquote -->
+  <figure class="text-center mt-5 mb-5">
+    <blockquote class="blockquote">
+      <p>Garantia de melhores preços e produtos de qualidade para sua família.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Equipe SUPER RÁPIDO,
+      <cite title="Source Title">sempre ao seu lado!</cite>
+    </figcaption>
+  </figure>
+
+  <!-- footer -->
+  <footer class="text-center bg-body-tertiary p-5">
+    <img id="logoIMG" src="./img/logotipo.jpeg" alt="logoIMG" />
+    <p class="mt-2 fw-bold">Horário de Funcionamento: Seg-Sex: 8h - 21h | Sáb: 8h - 18h</p>
+    <p class="mt-2">Endereço: Rua das Flores, 123, Centro, João Pessoa, PB</p>
+    <p class="mt-2 ">E-mail: contato@superapido.com</p>
+    <p class="mt-2">Telefone: (83) 1234-5678</p>
+  </footer>
+
+  <!-- footer -->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

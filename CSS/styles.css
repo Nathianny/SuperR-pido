@@ -1,0 +1,182 @@
+Paleta de cores
+#05B145
+#FCBF04
+#EE2B2F
+#2A2543
+#497544
+
+/* Estilos globais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px #2A2543
+}
+img, svg {
+    vertical-align: middle;
+    width: 200px;
+}
+.navbar-nav .nav-link {
+  color: #2A2543;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+  color: #2A2543;
+}
+
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+/* Carrossel */
+.imgCarrossel {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.tittleCarrosel {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subtittleCarrossel {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Cards */
+.cardMain {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 20px;
+  gap: 20px;
+  background-color: #28a745;
+
+}
+
+.card {
+  border: none;
+  box-shadow: 0 10px 10px #FCBF04;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color:#2A2543;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #464164;
+}
+
+.btnCard {
+  background-color: #EE2B2F;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btnCard:hover {
+  background-color: #FCBF04;
+}
+
+/* Modal */
+.modal-header {
+  background-color: #FCBF04;
+  color: white;
+}
+
+.modal-footer .btn-primary {
+  background-color: #28a745;
+  border: none;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #EE2B2F;
+  border: none;
+}
+
+/* Títulos de sessão */
+.titleCard {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px #EE2B2F;
+}
+
+.subtitleCard {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/* blockquote */
+.text-center{
+    margin: 20px 0;
+    padding: 50px;
+    color: #2A2543;
+    border-left: 5px solid #EE2B2F;
+    background-color:#28a745;
+}
+
+.blockquote-footer{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+  color: #2A2543;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #fff !important;
+}
