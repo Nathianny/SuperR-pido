@@ -26,16 +26,6 @@ Sessões de Produtos: Produtos destacados com imagens, descrições e botões de
 Citação (blockquote): Mensagem motivacional para os clientes.
 Rodapé: Links de contato e navegação adicional.
 
-Como Rodar o Projeto
-Clone este repositório: git clone https://github.com/seu-usuario/supermercado.git
-Abra o arquivo index.html no navegador.
-Certifique-se de que os arquivos CSS e imagens estão no diretório correto.
-Próximos Passos
-Melhorar a acessibilidade da página com foco em usuários com deficiência.
-Adicionar funcionalidades com JavaScript, como a possibilidade de interagir com os produtos.
-Otimizar a página para dispositivos móveis.
-
-
 Como Executar o Projeto:(https://super-rapido.vercel.app/)
 
 Licença Este projeto está sob a licença MIT. Sinta-se à vontade para utilizá-lo, modificá-lo e distribuí-lo como preferir.
