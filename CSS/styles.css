@@ -80,11 +80,11 @@ img, svg {
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card {
 
   }
-}
+} */
 
 .card:hover {
   transform: translateY(-10px);
