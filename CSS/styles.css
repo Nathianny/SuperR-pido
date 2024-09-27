@@ -1,184 +1,151 @@
-Paleta de cores
-#05B145
-#FCBF04
-#EE2B2F
-#2A2543
-#497544
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Estilos globais */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
+  color: #212529;
 }
 
-/* Navbar */
 .navbar {
-  box-shadow: 0 4px 6px #2A2543
-}
-img, svg {
-    vertical-align: middle;
-    width: 200px;
-}
-.navbar-nav .nav-link {
-  color: #2A2543;
-  font-weight: 500;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav .nav-link.active {
-  color: #2A2543;
-}
-
-
-.btn-success {
-  background-color: #28a745;
+.navbar .navbar-toggler {
   border: none;
 }
 
-/* Carrossel */
-.imgCarrossel {
-  height: 100%;
+.offcanvas {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.offcanvas .btn-close {
+  filter: invert(100%);
+}
+
+.offcanvas a.nav-link {
+  color: #fff;
+}
+
+.offcanvas a.nav-link:hover {
+  color: #6c757d;
+}
+
+#imgLogo {
+  max-width: 150px;
+}
+
+.carousel-item img {
+  width: 100%;
   object-fit: cover;
+
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .tittleCarrosel {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.subtittleCarrossel {
+.subtittleCarrosel {
   font-size: 1.2rem;
-  font-weight: 400;
 }
 
-/* Cards */
+.titleCard, .subtitleCard {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #28a745;
+  color: #fff;  
+  border-radius: 0.25rem;
+}
+
+.titleCard p, .subtitleCard p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .cardMain {
   display: flex;
-  padding: 20px;
-  margin-top: 20px;
-  gap: 20px;
-  justify-content: center;
-  background-color: #28a745;
-
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
 }
 
 .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
   border: none;
-  box-shadow: 0 10px 10px #FCBF04;
-  transition: transform 0.3s ease-in-out;
+  max-width: 400px;
 }
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* @media (max-width: 768px) {
-  .card {
-
-  }
-} */
 
 .card:hover {
   transform: translateY(-10px);
 }
 
-.card-title {
-  font-weight: 600;
+.card img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.card-body {
   text-align: center;
-  color:#2A2543;
-  
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
 }
 
 .card-text {
-  text-align: justify;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #464164;
+  font-size: 1rem;
+  color: #555;
+}
+
+#valor{
+  color: #218838;
 }
 
 .btnCard {
-  background-color: #EE2B2F;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: #fff;
   border: none;
-  transition: background-color 0.3s ease-in-out;
-  border-radius: 10px;
+  display: flex;
 }
 
 .btnCard:hover {
-  background-color: #FCBF04;
+  background-color: #218838;
 }
 
-/* Modal */
 .modal-header {
-  background-color: #FCBF04;
-  color: white;
+  background-color: #28a745;
+  color: #fff;
 }
 
 .modal-footer .btn-primary {
   background-color: #28a745;
-  border: none;
 }
 
-.modal-footer .btn-secondary {
-  background-color: #EE2B2F;
-  border: none;
-}
-
-/* Títulos de sessão */
-.titleCard {
+.footer {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  background-color: #28a745;
-  color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 6px #EE2B2F;
-}
-
-.subtitleCard {
-  margin-top: 20px;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-/* blockquote */
-.text-center{
-    margin: 20px 0;
-    padding: 50px;
-    color: #2A2543;
-    border-left: 5px solid #EE2B2F;
-    background-color:#28a745;
-}
-
-.blockquote-footer{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #fff;
-}
-
-/* Footer */
-footer {
-  color: #2A2543;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 10px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: #fff !important;
+  padding: 2rem;
+  background-color: #343a40;
+  color: #FFFFFF;
+  margin-top: 2rem;
 }
